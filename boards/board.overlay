@@ -1,0 +1,5 @@
+&usb {
+    // Kích hoạt chế độ USB độc lập cho cả hai bên
+    compatible = "zmk,usb";
+    status = "okay";
+};
