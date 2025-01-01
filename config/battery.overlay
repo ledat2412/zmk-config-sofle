@@ -1,6 +1,0 @@
-/{
-    zephyr,user {
-        battery-full-millivolts = <4200>;   // Điện áp khi pin đầy (4.2V)
-        battery-empty-millivolts = <3000>; // Điện áp khi pin cạn (3.0V)
-    };
-};
