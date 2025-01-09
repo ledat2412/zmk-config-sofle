@@ -28,6 +28,15 @@
         };
     };
 
+        behaviors {
+        tog_on: toggle_layer_on_only {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer On";
+            toggle-mode = "on";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -128,7 +137,7 @@
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B      &kp LBKT      &kp LBKT   &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
                    &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp SPACE     &kpRET     &mo RAISE  &kp RCTRL  &kp RALT   &kp RGUI
             >;
-        }
+        };
     };
 };
 
