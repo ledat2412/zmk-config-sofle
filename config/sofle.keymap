@@ -112,11 +112,6 @@
                                     &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
             >;
         };
-        
-        1hand_layer {
-            label = "game";
-
-        };
     };
 };
 
