@@ -79,11 +79,11 @@
         layer_2 {
             label = "game1hand";
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                           &kp N6  &kp N7          &kp N8          &kp N9           &kp N0    &kp DELETE
-&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                            &kp Y   &kp U           &mmv MOVE_UP    &kp O            &kp P     &kp BSPC
-&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                            &kp H   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B      &game_1    &kp RBKT   &kp N   &kp M           &kp COMMA       &kp DOT          &kp FSLH  &kp RSHFT
-                   &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 3      &kp ENTER  &mo 4   &kp RCTRL       &kp RALT        &kp RGUI
+&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                           &kp N6  &kp N7            &kp N8             &kp N9             &kp N0    &kp DELETE
+&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                            &kp Y   &kp U             &mmv MOVE_X(100)   &kp O              &kp P     &kp BSPC
+&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                            &kp H   &mmv MOVE_Y(100)  &mmv MOVE_X(-100)  &mmv MOVE_Y(-100)  &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B      &game_1    &kp RBKT   &kp N   &kp M             &kp COMMA          &kp DOT            &kp FSLH  &kp RSHFT
+                   &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 3      &kp ENTER  &mo 4   &kp RCTRL         &kp RALT           &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp DOWN UP>;
