@@ -1,6 +1,8 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
   SalacaBill: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
+    Z, X, C, V, B, '&mmv MOVE_X(0)', '&mmv MOVE_Y(0)', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
+  coding: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
     Z, X, C, V, B, '[', ']', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
   left_hand: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
     Z, X, C, V, B, '[', ']', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, SPACE, ENTER, raise, RCTRL, RALT, RGUI]
@@ -133,8 +135,8 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - {t: coding, h: toggle}
   - {t: left_hand, h: toggle}
-  - ''
   - ''
   - ''
   - ''
