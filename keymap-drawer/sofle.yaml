@@ -1,66 +1,7 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  SalacaBill:
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - DELETE
-  - ESC
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - BSPC
-  - TAB
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - LSHFT
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - {t: '{', h: lower}
-  - {t: '}', h: raise}
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - RSHFT
-  - LGUI
-  - LALT
-  - LCTRL
-  - lower
-  - RET
-  - SPACE
-  - raise
-  - RCTRL
-  - RALT
-  - RGUI
+  SalacaBill: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
+    Z, X, C, V, B, '&caps_word', INS, N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
   coding: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
     Z, X, C, V, B, '[', ']', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
   game1hand: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
@@ -108,7 +49,7 @@ layers:
   - KP PLUS
   - '{'
   - '}'
-  - {t: MUTE, type: held}
+  - MUTE
   - PP
   - '['
   - ']'
@@ -119,7 +60,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -170,7 +111,7 @@ layers:
   - PASTE
   - {t: ▽, type: trans}
   - PREV
-  - {t: NEXT, type: held}
+  - NEXT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -183,7 +124,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -230,8 +171,8 @@ layers:
   - ''
   - ''
   - ''
-  - {t: RGB TOG, type: held}
-  - {t: OUT TOG, type: held}
+  - RGB TOG
+  - OUT TOG
   - ''
   - ''
   - ''
@@ -241,10 +182,10 @@ layers:
   - ''
   - ''
   - ''
+  - {type: held}
   - ''
   - ''
-  - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
