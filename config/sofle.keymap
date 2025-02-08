@@ -37,6 +37,29 @@
             bindings = <&kp ENTER &kp N &kp O &kp SPACE &kp A &kp G &kp E &kp ENTER>;
             label = "GAME_1";
         };
+
+        clipboard: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_WIN &kp LG(V)>;
+            label = "NEW_MACRO";
+        };
+
+        emote: emote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_WIN &kp PERIOD>;
+            label = "EMOTE";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        emote {
+            bindings = <&emote>;
+            key-positions = <36 59>;
+        };
     };
 
     keymap {
@@ -53,11 +76,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                           &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp DELETE
-&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                            &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                            &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &caps_word    &kp INS    &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                   &kp LGUI  &kp LALT  &kp LCTRL  &mo 3   &kp RET       &kp SPACE  &mo 4   &kp RCTRL  &kp RALT   &kp RGUI
+&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                         &kp N6  &kp N7     &kp N8     &kp N9      &kp N0    &kp DELETE
+&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                          &kp Y   &kp U      &kp I      &kp O       &kp P     &kp BSPC
+&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                          &kp H   &kp J      &kp K      &kp L       &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp CAPS    &kp INS    &kp N   &kp M      &kp COMMA  &kp DOT     &kp FSLH  &kp RSHFT
+                   &kp LGUI  &kp LALT  &kp LCTRL  &mo 3   &kp RET     &kp SPACE  &mo 4   &kp RCTRL  &kp RALT   &clipboard
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp DOWN UP>;
