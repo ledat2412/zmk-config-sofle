@@ -159,6 +159,7 @@ layers:
   - RGB BRI
   - RGB SPI
   - RGB SPD
+  - RGB TOG
   - ''
   - ''
   - ''
@@ -169,9 +170,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - '&bl BL_TOG'
+  - '&bl BL_CYCLE'
   - RGB TOG
   - {t: ▽, type: trans}
   - ''
