@@ -41,14 +41,14 @@
         clipboard: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_WIN &kp LG(V)>;
+            bindings = <&kp LG(V)>;
             label = "NEW_MACRO";
         };
 
         emote: emote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_WIN &kp PERIOD>;
+            bindings = <&kp LG(DOT)>;
             label = "EMOTE";
         };
     };
@@ -59,6 +59,7 @@
         emote {
             bindings = <&emote>;
             key-positions = <36 59>;
+            layers = <0>;
         };
     };
 
