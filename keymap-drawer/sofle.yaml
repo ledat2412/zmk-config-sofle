@@ -193,3 +193,4 @@ layers:
 combos:
 - p: [36, 59]
   k: '&emote'
+  l: [SalacaBill]
