@@ -1,9 +1,12 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
   SalacaBill: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
+    Z, X, C, V, B, CAPS, INS, N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, APP, '&clipboard']
+  coding: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
     Z, X, C, V, B, '[', ']', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
-  left_hand: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
-    Z, X, C, V, B, '[', ']', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, SPACE, ENTER, raise, RCTRL, RALT, RGUI]
+  game1hand: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, '&mmv MOVE_X(100)', O, P, BSPC, TAB, A, S, D, F, G, H, '&mmv
+      MOVE_Y(100)', '&mmv MOVE_X(-100)', '&mmv MOVE_Y(-100)', ;, '''', LSHFT, Z, X, C, V, B, '&game_1', ']', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, SPACE, lower,
+    ENTER, raise, RCTRL, RALT, RGUI]
   lower:
   - {t: ▽, type: trans}
   - F1
@@ -17,7 +20,7 @@ layers:
   - F9
   - F10
   - F11
-  - '`'
+  - Ctl+~
   - '1'
   - '2'
   - '3'
@@ -133,8 +136,8 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: left_hand, h: toggle}
-  - ''
+  - {t: coding, h: toggle}
+  - {t: game1hand, h: toggle}
   - ''
   - ''
   - ''
@@ -156,19 +159,6 @@ layers:
   - RGB BRI
   - RGB SPI
   - RGB SPD
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - RGB TOG
   - ''
   - ''
@@ -180,6 +170,19 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
   - ''
   - ''
@@ -187,3 +190,7 @@ layers:
   - ''
   - ''
   - ''
+combos:
+- p: [36, 59]
+  k: '&emote'
+  l: [SalacaBill]
